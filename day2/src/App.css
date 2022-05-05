@@ -1,0 +1,17 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.users {
+  text-align: left;
+  margin: 30px 20px;
+}
+.users div {
+  padding: 10px;
+  margin: 10px;
+  background: rgb(118, 165, 196);
+  border-radius: 10px;
+}
+.page-deets {
+  margin-top: 80px;
+}

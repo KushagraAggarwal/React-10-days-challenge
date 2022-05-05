@@ -1,0 +1,24 @@
+*{
+  background-color: yellow;
+}
+.App {
+  margin: auto;
+  margin-top: 35vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: yellow;
+}
+
+.container{
+  border: 2px solid blue;
+  border-radius: 2%;
+  color: white;
+  padding: 10px;
+  background-color: blue;
+}
+
+.container input{
+  background-color: white;
+}
+
