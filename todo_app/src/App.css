@@ -1,147 +1,108 @@
-* {
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.container{
+  background: linear-gradient(to right bottom, #e1b382, #c89666);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-wraper{
+  background-color: #12343b;
+  min-width: 450px;
+  min-height: 650px;
+  padding: 30px;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
-}
-
-body {
-  background: linear-gradient(
-    90deg,
-    rgba(48, 16, 255, 1) 0%,
-    rgba(100, 115, 255, 1) 100%
-  );
-}
-.todo-app {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 520px;
-  min-height: 600px;
-  background: #161a2b;
-  text-align: center;
-  margin: 128px auto;
   border-radius: 10px;
-  padding-bottom: 32px;
+  box-shadow: 3px 6px 40px #000;
+  margin-bottom: 10px;
 }
 
-h1 {
-  margin: 32px 0;
-  color: #fff;
-  font-size: 24px;
+.header h1{
+  color: white;
+  text-align: center;
+  margin: 30px 0px;
 }
 
-.complete {
-  text-decoration: line-through;
-  opacity: 0.4;
-}
-
-.todo-form {
-  margin-bottom: 32px;
-}
-
-.todo-input {
-  padding: 14px 32px 14px 16px;
-  border-radius: 4px 0 0 4px;
-  border: 2px solid #5d0cff;
+.task-input{
   outline: none;
-  width: 320px;
-  background: transparent;
-  color: #fff;
+  width: 260px;
+  padding: 15px;
+  margin-right: 25px;
+  font-size: 20px;
+  color: #ccc;
+  background-color: #000000;
+  border: 1px solid #c89666;
+  border-radius: 10px;
 }
 
-.todo-input::placeholder {
-  color: #e2e2e2;
+.button-add{
+  width: 70px;
+  padding: 15px 15px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 0;
+  background-color: #f18f71;
+  cursor: pointer;
 }
 
-.todo-button {
-  padding: 16px;
+.list-item{
+  display: flex;
+  margin: 20px 0px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  max-height: 30px;
+}
+
+.button-complete,
+.button-edit,
+.button-delete{
   border: none;
-  border-radius: 0 4px 4px 0;
-  cursor: pointer;
   outline: none;
-  background: linear-gradient(
-    90deg,
-    rgba(93, 12, 255, 1) 0%,
-    rgba(155, 0, 250, 1) 100%
-  );
-  color: #fff;
-  text-transform: capitalize;
-}
-
-.todo-input.edit {
-  border: 2px solid #149fff;
-}
-
-.todo-button.edit {
-  background: linear-gradient(
-    90deg,
-    rgba(20, 159, 255, 1) 0%,
-    rgba(17, 122, 255, 1) 100%
-  );
-  padding: 16px 22px;
-}
-
-.todo-container {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-}
-
-.todo-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 4px auto;
-  color: #fff;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 118, 20, 1) 0%,
-    rgba(255, 84, 17, 1) 100%
-  );
-
-  padding: 16px;
-  border-radius: 5px;
-  width: 90%;
-}
-
-.todo-row:nth-child(4n + 1) {
-  background: linear-gradient(
-    90deg,
-    rgba(93, 12, 255, 1) 0%,
-    rgba(155, 0, 250, 1) 100%
-  );
-}
-
-.todo-row:nth-child(4n + 2) {
-  background: linear-gradient(
-    90deg,
-    rgba(255, 12, 241, 1) 0%,
-    rgba(250, 0, 135, 1) 100%
-  );
-}
-
-.todo-row:nth-child(4n + 3) {
-  background: linear-gradient(
-    90deg,
-    rgba(20, 159, 255, 1) 0%,
-    rgba(17, 122, 255, 1) 100%
-  );
-}
-
-.icons {
-  display: flex;
-  align-items: center;
-  font-size: 24px;
   cursor: pointer;
+  background-color: transparent;
+  font-size: 28px;
+  border-radius: 50%;
 }
 
-.delete-icon {
-  margin-right: 5px;
-  color: #fff;
+.button-complete{
+  color: #ff6c6c;
+  margin-right: 10px;
 }
 
-.edit-icon {
-  color: #fff;
+.button-edit{
+  color: #e2d029;
+  margin-right: 10px;
+}
+
+.button-delete{
+  color: lightseagreen;
+}
+
+.complete{
+  text-decoration-style: solid;
+  text-decoration-line: line-through;
+  text-decoration-color: #ff6c6c;
+  opacity: 0.6;
+}
+
+.list{
+  width: 220px;
+  background-color: #12343b;
+  border: none;
+  color: #ccc;
+  font-size: 20px;
+  padding-left: 10px;
+  margin-right: 15px;
+}
+
+input:focus,
+button:focus{
+  outline: none;
 }
